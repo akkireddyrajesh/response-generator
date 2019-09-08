@@ -1,0 +1,22 @@
+{
+    "name": "response-generator",
+    "version": "0.0.1",
+    "description": "rest api response generator",
+    "main": "index.js",
+    "scripts": {
+        "test": "node test.js"
+    },
+    "keywords": [
+        "response",
+        "generator",
+        "response generator",
+        "rest api response generator",
+        "response generator"
+    ],
+    "author": "akkireddyrajesh",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/akkireddyrajesh/response-generator"
+    },
+    "license": "MIT"
+}
