@@ -11,7 +11,7 @@ exports.responseGen= class ResponseGenerator{
         this.default_configArgs={
             "ver":null,
             "timestamp":false,
-            "hide_status":true,
+            "hide_status":false,
             "customResponseCodesFilePath":null
         };
     
@@ -22,10 +22,10 @@ exports.responseGen= class ResponseGenerator{
         this.ts= (configArgs.timestamp==false) ? this.default_configArgs.timestamp :Date.now(); 
     
         //preparing hide_status
-        this.hide_status= configArgs.hide_status ? true : this.default_configArgs.hide_status;
+        this.hide_status= configArgs.hide_status ? this.default_configArgs.hide_status : true;
         
         //preparing customResponseCodesFilePath 
-        this.hide_status= configArgs.customResponseCodesFilePath ? configArgs.customResponseCodesFilePath : this.default_configArgs.customResponseCodesFilePath;    
+        this.customResponseCodesFilePath= configArgs.customResponseCodesFilePath ? configArgs.customResponseCodesFilePath : this.default_configArgs.customResponseCodesFilePath;    
     
     }
 
